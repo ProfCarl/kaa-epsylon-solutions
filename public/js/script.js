@@ -1,6 +1,8 @@
-const toggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('nav ul');
-
-toggle.addEventListener('click', () => {
-  navLinks.classList.toggle('showing');
-});
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

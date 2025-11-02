@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - KAA-EPSYLON SOLUTIONS</title>
-  <link rel="stylesheet" href="/assets?q=/css/style.css">
-  <link rel="icon" type="image/png" href="/assets?q=/images/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | KAA-EPSYLON SOLUTIONS</title>
+  <link rel="stylesheet" href="/assets?q=/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/assets?q=/images/logo.png" type="image/png">
 </head>
-<body>
-  <header>
-    <img src="/assets?q=/images/logo.png" alt="KAA-EPSYLON Logo">
-    <div class="menu-toggle">
-      <span></span><span></span><span></span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero" style="background: url('/assets?q=/images/contact.jpg') no-repeat center/cover;">
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="/" class="active"><img src="/assets?q=/images/logo.png" style="width: 150px;"></a>
+  <a href="/about">About Us</a>
+  <a href="/contact">Contact Us</a>
+  <a href="/services">Services</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+
+  <section class="contact-hero" style="background: url('/assets?q=/images/contact.jpg') no-repeat center/cover;">
+    <div class="overlay"></div>
     <div class="hero-content">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you. Get in touch today!</p>
+      <h1 style="color: #fff;">Let's Build Something Great Together</h1>
     </div>
   </section>
 
-  <section style="text-align: center;">
-
-    <div style="margin:2rem 0;">
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
       <p><strong>Email:</strong> <a href="mailto:info@kaa-epsylon.com">info@kaa-epsylon.com</a></p>
       <p><strong>Phone:</strong> +233 59 499 3288 / +233 59 247 5132</p>
       <p><strong>Address:</strong> Sankofa Avenue, Dansoman SSNIT, Accra Ghana</p>
+      <div class="map-frame">
+        <iframe 
+          src="https://www.google.com/maps?q=Dansoman,+Accra,+Ghana&output=embed"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
 
-    <div>
-      <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" id="submitBtn">Send Message</button>
+        <p id="formAlert" class="alert"></p>
+      </form>
     </div>
   </section>
 
@@ -53,6 +63,7 @@
      <a href="/privacy" style="color:#fff; text-decoration:underline;">Privacy Policy</a>
   </p>
 </footer>
+
   <script src="/assets?q=/js/script.js"></script>
 </body>
 </html>
