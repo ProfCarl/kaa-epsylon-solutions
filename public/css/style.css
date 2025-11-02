@@ -36,6 +36,7 @@ nav ul li a {
   transition: color 0.3s;
 }
 nav ul li a:hover { color: #de8501; }
+nav ul li a:link { color: #de8501; }
 
 /* Mobile menu */
 .menu-toggle {
